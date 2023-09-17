@@ -14,5 +14,8 @@ public class Main {
         for (WhitespaceInstruction instruction : instructions) {
             System.out.print(instruction.type.toString() + " " + instruction.valuei + " " + instruction.values + "\n");
         }
+
+        WhitespaceRunner runner = new WhitespaceRunner(instructions);
+        runner.run();
     }
 }
